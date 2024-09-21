@@ -1,0 +1,129 @@
+.all-products-section {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .all-products-section {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .all-products-container {
+    margin-left: 30px;
+    width: 70%;
+  }
+}
+
+.products-heading {
+  color: #475569;
+  font-family: 'Roboto';
+  font-size: 20px;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 768px) {
+  .products-heading {
+    font-size: 32px;
+  }
+}
+
+.products-loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+@media screen and (min-width: 768px) {
+  .products-loader-container {
+    width: 70%;
+  }
+}
+
+.products-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+}
+.no-product-view {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.no-product-img {
+  width: 200px;
+  height: 150px;
+  padding-top: 20px;
+}
+.no-heading {
+  color: #171f46;
+  font-family: roboto;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.no-para {
+  color: #64748b;
+  font-family: roboto;
+  font-size: 14px;
+  line-height: 1.2;
+  text-align: center;
+  width: 90%;
+  max-width: 250px;
+}
+.error-view-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.failure-img {
+  width: 200px;
+}
+.failure-heading {
+  color: #171f46;
+  font-family: roboto;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.failure-para {
+  color: #64748b;
+  font-family: roboto;
+  font-size: 14px;
+  line-height: 1.2;
+  text-align: center;
+  width: 90%;
+  max-width: 250px;
+}
+@media screen and (min-width: 768px) {
+  .no-product-view {
+    width: 70%;
+  }
+  .no-product-img {
+    width: 400px;
+    height: 250px;
+  }
+  .no-heading,
+  .failure-heading {
+    font-size: 24px;
+  }
+  .no-para,
+  .failure-para {
+    font-size: 18px;
+    width: 60%;
+    max-width: 450px;
+  }
+  .error-view-container {
+    width: 70%;
+  }
+  .failure-img {
+    width: 350px;
+    height: 250px;
+    padding-top: 20px;
+  }
+}
